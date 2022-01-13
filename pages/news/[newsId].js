@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 function NewId() {
   const router = useRouter();
-  console.log(router.query.newsId);
-  return <h1>NewId</h1>;
+  const query = router.query.newsId;
+  return <h1>NewId {query}</h1>;
 }
 export default NewId;
